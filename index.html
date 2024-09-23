@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 50px;
+        }
+        #colorInput {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #submitBtn {
+            padding: 10px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Enter a Color Name</h1>
+    
+    <input type="text" id="colorInput" placeholder="Enter color (e.g., red)">
+    <button id="submitBtn">Submit</button>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            // Get the color value from the input field
+            var color = document.getElementById('colorInput').value;
+
+            // Set the background color of the body to the input color
+            document.body.style.backgroundColor = color;
+        });
+    </script>
+    
+</body>
+</html>
